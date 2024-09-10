@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------------------------links-------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Weather</title>
+  </head>
+  <body  data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!--------------------------------nav bar ----------------------------->
+    <nav
+      class="navbar navbar-expand-lg"
+      style="z-index: 1000; position: relative"
+    >
+      <div class="container p-5">
+        <div class="d-flex justify-content-center align-items-center ms-lg-5">
+          <img src="img/logo@2x.png" class="logo2X" alt="" />
+          <div
+            class="w-50 d-flex flex-column justify-content-center align-items-center ms-3"
+          >
+            <a class="navbar-brand ps-2 fw-semibold text-white" href="#"
+              >Weather</a
+            >
+            <span class="taglineModify text-white">tagline goes here</span>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler bg-white fs-6"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-5" id="navbarNav">
+          <ul class="navbar-nav ms-auto fw-semibold">
+            <li class="nav-item">
+              <a
+                class="nav-link active position-relative"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active position-relative"
+                aria-current="page"
+                href="#"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active position-relative"
+                aria-current="page"
+                href="#"
+                >Live Cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active position-relative"
+                aria-current="page"
+                href="#"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active position-relative"
+                aria-current="page"
+                href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------main photo---------------------------->
+    <!-- <div class="mainImage"></div> -->
+    <!-----------input and data------------------>
+    <section class="mainData">
+        <div class="container ">
+            <div class="row">
+                <div class="w-100 p-2 mb-5">
+                    <div class="innerItem">
+                        <div class="inputSearch">
+                            <input type="text" name="name of city" class="w-100 searchInput" id="inputSearch" placeholder="Find your location...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  outButDataBackG rounded-2">
+                    <div class="weatherData">
+                        <div class="weatherDayOfWeek">
+                            <span class="d-flex justify-content-between align-items-center px-1 py-2 py-1 weekAndMonth">
+                                <span id="todaysWeek">sunday</span>
+                                <span>
+                                  <span id="dayAndMonth">30 </span>
+                                  <span id="nameMonth">april</span>
+                                </span>
+                            </span>
+                        </div>
+                        <h1 class="h2 mt-3 p-2" id="cityName">Cairo</h1>
+                        <h2 class="h1 py-2 px-2" id="temperaqre">32.3<sup>o</sup>C</h2>
+                        <img src="img/113.png" alt="status of weather" id="statusOfWeatherimg">
+                        <p class="ps-1 text-info" id="textWeather">Partly cloudy</p>
+                        <div class="stutsWeather d-flex justify-content-start gap-5 align-items-center py-3">
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span><img src="img/icon-compass.png" alt="wind Direction" id="iconWeather"></span>
+                                <span class="ps-1" id="windDirection">East</span>
+                            </span>
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span><img src="img/icon-umberella.png" alt="winter or summer" id="winter"></span>
+                                <span class="ps-1" id="winterSpeed">20%</span>
+                            </span>
+                            <span class="d-flex justify-content-start align-items-center">
+                                <span><img src="img/icon-wind.png" alt="kilo metar wind" id=""></span>
+                                <span class="ps-1" id="kiloMtr">18km/h</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  outButNextDay rounded-2">
+                    <div class="weatherData">
+                        <div class="weatherDayOfWeek">
+                            <span class="d-flex justify-content-center align-items-center px-1 py-2 mt-1 weekAndMonth">
+                                <span  class="dayOfWeek">sunday</span>
+                            </span>
+                        </div>
+                        <h2 class="h3 pt-5 px-2 text-center temperare" id="temperaqre">32.3<sup>o</sup>C</h2>
+                        <p class="text-white-50 text-center minTemp">26.2 <sup>o</sup></p>
+                        <div class="d-flex justify-content-center">
+                            <img src="img/113.png" alt="status of weather" class="p-2 statusImage"  id="statusOfWeather">
+                        </div>
+                        <p class="ps-1 text-info text-center textStatusWeather" id="textWeather">Partly cloudy</p>
+                      
+                    </div>
+                </div>
+                <div class="col-md-4  outPutAfterDay rounded-2">
+                    <div class="weatherData ">
+                        <div class="weatherDayOfWeek">
+                            <span class="d-flex justify-content-center align-items-center px-1 py-2 mt-1  weekAndMonth">
+                                <span  class="dayOfWeek">sunday</span>
+                            </span>
+                        </div>
+                        <h2 class="h3 pt-5 px-2 text-center temperare" id="temperaqre">32.3<sup>o</sup>C</h2>
+                        <p class="text-white-50 text-center minTemp">26.2 <sup>o</sup></p>
+                        <div class="d-flex justify-content-center">
+                            <img src="img/113.png" alt="status of weather" class="p-2 statusImage"  id="statusOfWeather">
+                        </div>
+                        <p class="ps-1 text-info text-center textStatusWeather" id="textWeather">Partly cloudy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------footer section---------------->
+    <section class="footer">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-md-6 mt-4">
+                    <div class="footerIntem">
+                        <div class="inputFooter">
+                            <input type="text" class="searchInputFooter" placeholder="Enter your email to subscribe..." name="" id="">
+                            <p class="my-4 text-white ps-2">Copyright &copy; 2014 Company name. Designed by Themezy. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="footerLinks">
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center gap-1">
+                            <li><a href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-google-plus"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

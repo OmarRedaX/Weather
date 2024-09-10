@@ -1,0 +1,25 @@
+/* Start Contact */
+
+#contact-us {
+    
+    background: #1E202B;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #contact-us .container .bar {
+    background-color: var(--sec-color);
+  }
+  
+  #contact-us .container .bar a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  #contact-us .container .bar a:hover {
+    text-decoration: underline;
+    color: var(--text-color);
+  }
+
+  /* End Contact */

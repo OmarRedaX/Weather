@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="icon" href="images/favicon/asset 0.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!-- Start NAv Bar -->
+    <header>
+        <nav
+        class="navbar navbar-expand-lg"
+        style="z-index: 1000; position: relative"
+      >
+        <div class="container p-5">
+          <div class="d-flex justify-content-center align-items-center ms-lg-5">
+            <img src="img/logo@2x.png" class="logo2X" alt="" />
+            <div
+              class="w-50 d-flex flex-column justify-content-center align-items-center ms-3"
+            >
+              <a class="navbar-brand ps-2 fw-semibold text-white" href="#"
+                >Weather</a
+              >
+              <span class="taglineModify text-white">tagline goes here</span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler bg-white fs-6"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse me-5" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-semibold">
+              <li class="nav-item">
+                <a
+                  class="nav-link active position-relative"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active position-relative"
+                  aria-current="page"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active position-relative"
+                  aria-current="page"
+                  href="#"
+                  >Live Cameras</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active position-relative"
+                  aria-current="page"
+                  href="#"
+                  >Photos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active position-relative"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End NAv Bar -->
+    <!-- Start Home -->
+    <section id="contact-us" class="pt-0 pb-5 ">
+      <div class="container pt-5 pb-3">
+        <div class="bar rounded-pill py-3 px-4">
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-arrow-right-long mx-3 text-white"></i>
+          <span class="text-white-50">Contact</span>
+        </div>
+        <div class="row pt-3 mt-5 gy-4 justify-content-between">
+          <div class="col-lg-5">
+            <figure class="rounded-4 overflow-hidden">
+              <iframe
+                class="w-100 d-block"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7300238.1786410175!2d30.254350000000002!3d26.69425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1704715907919!5m2!1sen!2seg"
+                style="border: 0"
+                height="400"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </div>
+          <div class="col-lg-6">
+            <div class="inner">
+              <h2 class="text-white">Contact Us</h2>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi consectetur inventore ducimus, facilis, numquam id
+                soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                Nisi facilis odit hic, ipsum sed!
+              </p>
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill py-3 px-4"
+                    id="user-name"
+                    placeholder="Your Name..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control rounded-pill py-3 px-4"
+                    id="user-email"
+                    placeholder="Your Email..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill py-3 px-4"
+                    id="user-website"
+                    placeholder="Website..."
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill py-3 px-4"
+                    id="user-company"
+                    placeholder="Company Name..."
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name=""
+                    id=""
+                    cols=""
+                    rows="5"
+                    class="form-control w-100 rounded-5 py-3 px-4"
+                    placeholder="Message..."
+                  ></textarea>
+                </div>
+                <div class="col-12 text-end">
+                  <button
+                    type="submit"
+                    class="btn btn-info rounded-pill text-white"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-md-6 mt-4">
+                    <div class="footerIntem">
+                        <div class="inputFooter">
+                            <input type="text" class="searchInputFooter" placeholder="Enter your email to subscribe..." name="" id="">
+                            <p class="my-4 text-white ps-2">Copyright &copy; 2014 Company name. Designed by Themezy. All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <div class="footerLinks">
+                        <ul class="list-unstyled d-flex justify-content-center align-items-center gap-1">
+                            <li><a href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-google-plus"></i></a></li>
+                            <li><a href="#" ><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
